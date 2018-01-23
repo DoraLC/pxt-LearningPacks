@@ -1,0 +1,14 @@
+{
+    "name": "LearningPacks",
+    "version": "0.0.1",
+    "description": "Provided by eClass",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "main.ts"
+    ],
+    "public": true
+}
