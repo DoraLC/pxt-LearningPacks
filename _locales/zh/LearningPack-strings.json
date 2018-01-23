@@ -1,4 +1,9 @@
 {
+    "LearningPack|block": "學習套件",
+    "d.F|block": "前進",
+	"d.B|block": "後退",
+    "leds.on|block": "開", 
+	"leds.off|block": "關", 
 	"LearningPack.LED|block": "LED |紅 %red|黃 %yellow|綠 %green", 
 	"LearningPack.SpeedControl|block": "小車速度 |左 %left|右 %right|方向 %d"
 }
