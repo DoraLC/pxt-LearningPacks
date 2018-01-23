@@ -1,5 +1,5 @@
 {
-    "LearningPack|block": "學習套件",
+    "{id:category}LearningPack": "學習套件",
     "d.F|block": "前進",
 	"d.B|block": "後退",
     "leds.on|block": "開", 
