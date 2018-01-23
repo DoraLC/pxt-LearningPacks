@@ -1,8 +1,8 @@
 enum d {
     //% block="Forward"
-    F,
+    F=0,
     //% block="Backward"
-    B
+    B=1
 }
 enum leds {
     //% block="On"
@@ -25,17 +25,9 @@ namespace LearningPack{
     //% blockGap=2 weight=1 blockExternalInputs=true
     //% left.min=0 left.max=1023 right.min=0 right.max=1023
     export function SpeedControl(left: number, right: number, Direction: d): void {
-        if (Direction == d.F) {
-            pins.digitalWritePin(DigitalPin.P12, 0)
-            pins.digitalWritePin(DigitalPin.P16, 0)
+            pins.digitalWritePin(DigitalPin.P12, Direction)
+            pins.digitalWritePin(DigitalPin.P16, Direction)
             pins.analogWritePin(AnalogPin.P8, left)
             pins.analogWritePin(AnalogPin.P0, right)
-        }
-        else {
-            pins.digitalWritePin(DigitalPin.P12, 1)
-            pins.digitalWritePin(DigitalPin.P16, 1)
-            pins.analogWritePin(AnalogPin.P8, 1023 - left)
-            pins.analogWritePin(AnalogPin.P0, 1023 - right)
-        }
     }
 }
