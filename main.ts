@@ -12,7 +12,7 @@ enum leds {
 }
 
 //% weight=0 color=#2E2EFE icon="\uf1b9" block="Learning Packs"
-namespace LearningPack {
+namespace LearningPack{
     //% blockId="pack1" block="Pack 1 LED |red %red|yellow %yellow|green %green"
     //% blockGap=2 weight=0 blockExternalInputs=true
     export function LED(red: leds, yellow: leds, green: leds): void {
