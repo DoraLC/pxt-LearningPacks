@@ -8,7 +8,7 @@ enum leds {
     //% block="On"
     on=1, 
     //% block="Off"
-    off
+    off=0
 }
 
 //% weight=0 color=#2E2EFE icon="\uf1b9" block="Learning Packs"
