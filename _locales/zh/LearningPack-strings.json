@@ -4,6 +4,6 @@
 	"d.B|block": "後退",
     "leds.on|block": "開", 
 	"leds.off|block": "關", 
-	"LearningPack.pack1|block": "LED |紅 %red|黃 %yellow|綠 %green", 
-	"LearningPack.pack2|block": "小車速度 |左 %left|右 %right|方向 %d"
+	"LearningPack.LED|block": "LED |紅 %red|黃 %yellow|綠 %green", 
+	"LearningPack.SpeedControl|block": "小車速度 |左 %left|右 %right|方向 %d"
 }
