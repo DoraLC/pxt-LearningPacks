@@ -28,7 +28,7 @@ namespace LearningPack {
     }
 
     //% blockId="gate" block="Pack 2 Auto gate Gate %gate"
-    //% blockGap=2 weight=1
+    //% blockGap=2 weight=1 blockExternalInputs=true
     export function AG(gate: Gate): void {
         pins.servoWritePin(AnalogPin.P1, gate)
     }
