@@ -20,7 +20,8 @@ enum Gate {
 //% weight=0 color=#2E2EFE icon="\uf1b9" block="Learning Packs"
 namespace LearningPack {
     //% blockId="LED" block="Pack 1 LED |red %red|yellow %yellow|green %green"
-    //% blockGap=2 weight=0 blockExternalInputs=true
+    //% blockGap=2 blockExternalInputs=true
+    //% weight=0
     export function LED(red: leds, yellow: leds, green: leds): void {
         pins.digitalWritePin(DigitalPin.P0, red)
         pins.digitalWritePin(DigitalPin.P1, yellow)
@@ -28,13 +29,15 @@ namespace LearningPack {
     }
 
     //% blockId="gate" block="Pack 2 Auto gate Gate %gate"
-    //% blockGap=2 weight=1 blockExternalInputs=true
+    //% blockGap=2 blockExternalInputs=true
+    //% weight=1
     export function AG(gate: Gate): void {
         pins.servoWritePin(AnalogPin.P1, gate)
     }
 
     //% blockId="SpeedControl" block="Pack 3 car speed |left %left|right %right|direction %d"
-    //% blockGap=2 weight=2 blockExternalInputs=true
+    //% blockGap=2 blockExternalInputs=true
+    //% weight=2
     //% left.min=0 left.max=1023 right.min=0 right.max=1023
     export function SpeedControl(left: number, right: number, Direction: d): void {
         pins.digitalWritePin(DigitalPin.P12, Direction)
