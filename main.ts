@@ -30,14 +30,14 @@ namespace LearningPack {
 
     //% blockId="gate" block="Pack 2 Auto gate Gate %gate"
     //% blockGap=2 blockExternalInputs=true
-    //% weight=1
+    //% weight=2
     export function AG(gate: Gate): void {
         pins.servoWritePin(AnalogPin.P1, gate)
     }
 
     //% blockId="SpeedControl" block="Pack 3 car speed |left %left|right %right|direction %d"
     //% blockGap=2 blockExternalInputs=true
-    //% weight=2
+    //% weight=1
     //% left.min=0 left.max=1023 right.min=0 right.max=1023
     export function SpeedControl(left: number, right: number, Direction: d): void {
         pins.digitalWritePin(DigitalPin.P12, Direction)
