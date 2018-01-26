@@ -12,7 +12,7 @@ enum leds {
 }
 enum Gate {
     //% block="Open"
-    open = 90, 
+    open = 90,
     //% block="Closed"
     closed = 0
 }
@@ -27,7 +27,7 @@ namespace LearningPack {
         pins.digitalWritePin(DigitalPin.P2, green)
     }
 
-    //% blockId="gate" block="Pack 2 Auto gate" Gate %gate
+    //% blockId="gate" block="Pack 2 Auto gate Gate %gate"
     //% blockGap=2 weight=1
     export function AG(gate: Gate): void {
         pins.servoWritePin(AnalogPin.P1, gate)
