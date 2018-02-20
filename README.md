@@ -5,7 +5,6 @@ Testing
 ## License
 
 MIT
-eClass
 
 ## Supported targets
 
