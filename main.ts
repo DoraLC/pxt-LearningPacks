@@ -19,7 +19,7 @@ enum Gate {
 
 //% weight=0 color=#2E2EFE icon="\uf1b9" block="Learning Packs"
 namespace LearningPack {
-    //% blockId="LED" block="Pack 1 LED |red %red_pin %red|yellow %yellow_pin %yellow|green %green_pin %green"
+    //% blockId="LED" block="Pack 1 LED |red %red_pin |%red|yellow %yellow_pin |%yellow|green %green_pin |%green"
     //% blockGap=2 blockExternalInputs=true
     //% weight=0
     export function LED(red_pin: DigitalPin, yellow_pin: DigitalPin, green_pin: DigitalPin, red: leds, yellow: leds, green: leds): void {
@@ -28,7 +28,7 @@ namespace LearningPack {
         pins.digitalWritePin(green_pin, green)
     }
 
-    //% blockId="gate" block="Pack 2 Auto gate Gate %connectPin %gate"
+    //% blockId="gate" block="Pack 2 Auto gate Gate %connectPin |%gate"
     //% blockGap=2
     //% weight=2
     export function AG(connectPin: AnalogPin, gate: Gate): void {
