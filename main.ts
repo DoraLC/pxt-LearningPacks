@@ -19,13 +19,13 @@ enum Gate {
 
 //% weight=0 color=#2E2EFE icon="\uf1b9" block="Learning Packs"
 namespace LearningPack {
-    //% blockId="LED" block="Pack 1 LED |red %red|yellow %yellow|green %green"
+    //% blockId="LED" block="Pack 1 LED |red %red_pin %red|yellow %yellow_pin %yellow|green %green_pin %green"
     //% blockGap=2 blockExternalInputs=true
     //% weight=0
-    export function LED(red: leds, yellow: leds, green: leds): void {
-        pins.digitalWritePin(DigitalPin.P0, red)
-        pins.digitalWritePin(DigitalPin.P1, yellow)
-        pins.digitalWritePin(DigitalPin.P2, green)
+    export function LED(red_pin: DigitalPin, yellow_pin: DigitalPin, green_pin: DigitalPin, red: leds, yellow: leds, green: leds): void {
+        pins.digitalWritePin(red_pin, red)
+        pins.digitalWritePin(yellow_pin, yellow)
+        pins.digitalWritePin(green_pin, green)
     }
 
     //% blockId="gate" block="Pack 2 Auto gate Gate %gate"
@@ -42,7 +42,7 @@ namespace LearningPack {
     export function SpeedControl(left: number, right: number, Direction: d): void {
         pins.digitalWritePin(DigitalPin.P12, Direction)
         pins.digitalWritePin(DigitalPin.P16, Direction)
-        if (Direction == 0){
+        if (Direction == 0) {
             pins.analogWritePin(AnalogPin.P8, left)
             pins.analogWritePin(AnalogPin.P0, right)
         }
