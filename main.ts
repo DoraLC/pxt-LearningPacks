@@ -42,7 +42,13 @@ namespace LearningPack {
     export function SpeedControl(left: number, right: number, Direction: d): void {
         pins.digitalWritePin(DigitalPin.P12, Direction)
         pins.digitalWritePin(DigitalPin.P16, Direction)
-        pins.analogWritePin(AnalogPin.P8, left)
-        pins.analogWritePin(AnalogPin.P0, right)
+        if (Direction == 0){
+            pins.analogWritePin(AnalogPin.P8, left)
+            pins.analogWritePin(AnalogPin.P0, right)
+        }
+        else {
+            pins.analogWritePin(AnalogPin.P8, 1023 - left)
+            pins.analogWritePin(AnalogPin.P0, 1023 - right)
+        }
     }
 }
