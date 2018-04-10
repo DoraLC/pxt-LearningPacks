@@ -28,11 +28,11 @@ namespace LearningPack {
         pins.digitalWritePin(green_pin, green)
     }
 
-    //% blockId="gate" block="Pack 2 Auto gate Gate %gate"
-    //% blockGap=2 blockExternalInputs=true
+    //% blockId="gate" block="Pack 2 Auto gate Gate %connectPin %gate"
+    //% blockGap=2
     //% weight=2
-    export function AG(gate: Gate): void {
-        pins.servoWritePin(AnalogPin.P1, gate)
+    export function AG(connectPin: AnalogPin, gate: Gate): void {
+        pins.servoWritePin(connectPin, gate)
     }
 
     //% blockId="SpeedControl" block="Pack 3 car speed |left %left|right %right|direction %d"
