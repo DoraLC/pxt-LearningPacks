@@ -22,13 +22,13 @@ namespace LearningPack {
     //% blockId="LED" block="Pack 1 LED |red %red_pin |%red|yellow %yellow_pin |%yellow|green %green_pin |%green"
     //% blockGap=2 blockExternalInputs=true
     //% weight=0
-    export function LED(red_pin: DigitalPin, yellow_pin: DigitalPin, green_pin: DigitalPin, red: leds, yellow: leds, green: leds): void {
+    export function LED(red_pin: DigitalPin, red: leds, yellow_pin: DigitalPin, yellow: leds, green_pin: DigitalPin, green: leds): void {
         pins.digitalWritePin(red_pin, red)
         pins.digitalWritePin(yellow_pin, yellow)
         pins.digitalWritePin(green_pin, green)
     }
 
-    //% blockId="gate" block="Pack 2 Auto gate Gate %connectPin |%gate"
+    //% blockId="gate" block="Pack 2 Auto gate Gate %connectPin | %gate"
     //% blockGap=2
     //% weight=2
     export function AG(connectPin: AnalogPin, gate: Gate): void {
