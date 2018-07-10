@@ -1,6 +1,7 @@
 # LearningPack
 
-Testing
+* Beta version
+* Developed by BL contents team
 
 ## License
 
