@@ -12,5 +12,5 @@ MIT
 (The metadata above is needed for package search.)
 
 ```package
-LP=github:DoraLC/LearningPacks
+LP=github:BLstem/LearningPacks
 ```
